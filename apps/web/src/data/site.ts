@@ -1,9 +1,9 @@
 export const site = {
-  brand: "Meridian",
+  brand: "Byte&Brush Studio",
   tagline: "Product craft for ambitious teams.",
   description:
     "We design and build digital products that feel inevitable — clear, fast, and made to last.",
-  email: "hello@meridian.studio",
+  email: "hello@byte&brush.studio",
   location: "Remote · Asia & Europe",
   nav: [
     { label: "About", href: "#about" },
@@ -15,7 +15,7 @@ export const site = {
 
 export const about = {
   headline: "A small collective with a sharp focus.",
-  body: "Meridian partners with founders and product teams to shape interfaces, systems, and experiences that people actually want to use. Less noise. More clarity.",
+  body: "Byte&Brush Studio partners with founders and product teams to shape interfaces, systems, and experiences that people actually want to use. Less noise. More clarity.",
   principles: [
     {
       title: "Clarity first",

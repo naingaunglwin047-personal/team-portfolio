@@ -1,4 +1,4 @@
-# Meridian — Team Portfolio
+# Byte&Brush Studio — Team Portfolio
 
 Single-page team portfolio built with Vite, React, Tailwind, and [Motion](https://motion.dev).
 

@@ -29,7 +29,8 @@ export function Hero() {
   const contentOpacity = useTransform(scrollYProgress, [0, 0.55], [1, 0])
   const artY = useTransform(scrollYProgress, [0, 1], ["0%", "12%"])
 
-  const brandLetters = site.brand.split("")
+  // const brandLetters = site.brand.split("")
+  const brandLines = (site.brand || "Byte&Brush\nStudio").split("\n")
 
   return (
     <section
@@ -84,20 +85,29 @@ export function Hero() {
               variants={staggerFast}
               initial="hidden"
               animate="visible"
-              className="font-display flex flex-wrap text-5xl font-semibold tracking-tight text-white sm:text-7xl md:text-8xl"
+              className="font-display flex flex-col text-5xl font-semibold tracking-tight text-white sm:text-7xl md:text-8xl"
               aria-label={site.brand}
             >
-              {brandLetters.map((letter, index) => (
-                <motion.span
-                  key={`${letter}-${index}`}
-                  variants={letterReveal}
-                  transition={{ ...easeOutExpo, duration: 0.75 }}
-                  className="inline-block"
-                >
-                  {letter}
-                </motion.span>
+              {brandLines.map((line, lineIndex) => (
+                <span key={`line-${lineIndex}`} className="flex flex-wrap gap-x-[0.25em]">
+                  {line.split(" ").map((word, wordIndex) => (
+                    <span key={`word-${lineIndex}-${wordIndex}`} className="inline-flex whitespace-nowrap">
+                      {word.split("").map((letter, letterIndex) => (
+                        <motion.span
+                          key={`letter-${lineIndex}-${wordIndex}-${letterIndex}`}
+                          variants={letterReveal}
+                          transition={{ ...easeOutExpo, duration: 0.75 }}
+                          className="inline-block"
+                        >
+                          {letter}
+                        </motion.span>
+                      ))}
+                    </span>
+                  ))}
+                </span>
               ))}
             </motion.p>
+
 
             <motion.h1
               variants={fadeUp}
