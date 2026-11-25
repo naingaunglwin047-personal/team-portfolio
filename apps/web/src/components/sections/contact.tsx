@@ -8,11 +8,9 @@ export function Contact() {
   return (
     <section id="contact" className="relative overflow-hidden py-24 sm:py-32">
       <div className="absolute inset-0 bg-gradient-to-br from-brand/15 via-transparent to-[oklch(0.78_0.08_200_/_0.2)]" />
-      <motion.div
+      <div
         aria-hidden
         className="pointer-events-none absolute -left-20 top-10 h-80 w-80 rounded-full bg-brand/20 blur-3xl"
-        animate={{ opacity: [0.4, 0.75, 0.4], scale: [1, 1.12, 1] }}
-        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
       />
 
       <div className="relative mx-auto max-w-6xl px-5 sm:px-8">

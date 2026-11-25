@@ -7,7 +7,7 @@ export const site = {
   location: "Remote · Asia & Europe",
   nav: [
     { label: "About", href: "#about" },
-    { label: "Team", href: "#team" },
+    { label: "Services", href: "#services" },
     { label: "Work", href: "#work" },
     { label: "Contact", href: "#contact" },
   ],
@@ -32,34 +32,30 @@ export const about = {
   ],
 } as const
 
-export const team = [
+export const services = [
   {
-    name: "Ava Chen",
-    role: "Product Design",
-    bio: "Leads research-to-UI systems for SaaS and fintech products.",
-    image: "/illustrations/team-ava.png",
-    links: { linkedin: "#", github: "#" },
+    title: "Product Design",
+    description:
+      "Research-led interfaces and design systems that stay coherent from first sketch to shipped product.",
+    offerings: ["UX research", "UI systems", "Prototyping"],
   },
   {
-    name: "Noah Reyes",
-    role: "Engineering",
-    bio: "Front-end architect focused on performance and motion systems.",
-    image: "/illustrations/team-noah.png",
-    links: { linkedin: "#", github: "#" },
+    title: "Interface Engineering",
+    description:
+      "Front-end architecture built for speed, accessibility, and motion that feels intentional.",
+    offerings: ["React apps", "Design systems", "Motion craft"],
   },
   {
-    name: "Mia Okonkwo",
-    role: "Brand & Content",
-    bio: "Shapes narrative, visual identity, and launch storytelling.",
-    image: "/illustrations/team-mia.png",
-    links: { linkedin: "#", github: "#" },
+    title: "Brand & Narrative",
+    description:
+      "Visual identity and launch storytelling that make the product unmistakable.",
+    offerings: ["Identity", "Content", "Launch kits"],
   },
   {
-    name: "Leo Hartmann",
-    role: "Strategy",
-    bio: "Connects product vision to measurable outcomes and roadmaps.",
-    image: "/illustrations/team-leo.png",
-    links: { linkedin: "#", github: "#" },
+    title: "Product Strategy",
+    description:
+      "Roadmaps and priorities that connect vision to outcomes your team can measure.",
+    offerings: ["Discovery", "Roadmapping", "Workshops"],
   },
 ] as const
 

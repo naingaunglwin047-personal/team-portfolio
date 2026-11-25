@@ -7,17 +7,13 @@ import { SectionHeading } from "@/components/ui/section-heading"
 export function About() {
   return (
     <section id="about" className="relative overflow-hidden py-24 sm:py-32">
-      <motion.div
+      <div
         aria-hidden
         className="pointer-events-none absolute -top-24 right-0 h-72 w-72 rounded-full bg-brand/10 blur-3xl"
-        animate={{ opacity: [0.45, 0.8, 0.45], scale: [1, 1.08, 1] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       />
-      <motion.div
+      <div
         aria-hidden
         className="pointer-events-none absolute bottom-0 left-0 h-64 w-64 rounded-full bg-[oklch(0.75_0.08_200_/_0.25)] blur-3xl"
-        animate={{ opacity: [0.35, 0.7, 0.35], x: [0, 18, 0] }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
       />
 
       <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
