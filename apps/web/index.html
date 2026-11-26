@@ -1,14 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/illustrations/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Declare a real dark theme so Discord/Messenger don't algorithmically invert colors -->
+    <meta name="color-scheme" content="dark" />
     <meta
       name="description"
-      content="Byte&Brush Studio — a product collective designing and building digital experiences with clarity and purposeful motion."
+      content="Erhlich Solution — a product collective designing and building digital experiences with clarity and purposeful motion."
     />
-    <title>Byte&Brush Studio</title>
+    <title>Erhlich Solution</title>
+    <style>
+      html {
+        color-scheme: dark;
+        background-color: #0f1219;
+      }
+    </style>
+    <script>
+      // Lock dark theme before paint (avoids white flash / WebView force-dark bugs)
+      ;(function () {
+        var root = document.documentElement
+        root.classList.remove("light")
+        root.classList.add("dark")
+        try {
+          if (localStorage.getItem("theme") !== "dark") {
+            localStorage.setItem("theme", "dark")
+          }
+        } catch (_) {}
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>

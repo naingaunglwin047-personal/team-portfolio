@@ -20,7 +20,7 @@ export function Hero() {
   const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "18%"])
   const contentOpacity = useTransform(scrollYProgress, [0, 0.55], [1, 0])
 
-  const brandLines = (site.brand || "Byte&Brush\nStudio").split("\n")
+  const brandLines = (site.brand || "Erhlich\nSolution").split("\n")
 
   return (
     <section

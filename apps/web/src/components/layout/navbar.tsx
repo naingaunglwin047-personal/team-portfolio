@@ -164,7 +164,7 @@ export function Navbar() {
           <a
             href="#contact"
             onClick={(event) => goTo("#contact", event)}
-            className="hidden rounded-md bg-white px-3.5 py-2 text-sm font-semibold !text-black shadow-sm transition-opacity hover:opacity-90 sm:inline-flex"
+            className="hidden rounded-md bg-white px-3.5 py-2 text-sm font-semibold !text-black shadow-sm transition-opacity hover:opacity-90 md:inline-flex"
           >
             Start a project
           </a>

@@ -1,4 +1,4 @@
-# Byte&Brush Studio — Team Portfolio
+# Erhlich Solution — Team Portfolio
 
 Single-page team portfolio built with Vite, React, Tailwind, and [Motion](https://motion.dev).
 
